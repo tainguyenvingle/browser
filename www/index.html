@@ -14,7 +14,6 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-    <script type="text/javascript" src="js/LaunchMyApp.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -42,8 +41,8 @@
         </form>
         <div class="list">
             <a class="item item-thumbnail-left" ng-click="selectItem($index)" ng-repeat="item in items">
-              <img src="img/game.png">
-              <h2>{{item.title}}</h2>
+              <img src="{{'http://game.opl.kr/'+item.thumbnail}}">
+              <h2>{{item.name}}</h2>
             </a>
         </div>
       </ion-content>

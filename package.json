@@ -20,11 +20,7 @@
     "cordova-plugin-splashscreen",
     "cordova-plugin-statusbar",
     "ionic-plugin-keyboard",
-    "cordova-plugin-inappbrowser",
-    {
-      "locator": "https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git",
-      "id": "cordova-plugin-flashlight"
-    }
+    "cordova-plugin-inappbrowser"
   ],
   "cordovaPlatforms": [
     {

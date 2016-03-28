@@ -1,0 +1,51 @@
+.doneButton{
+	color:#666666;
+	border:1px #666666 solid;
+	background-color:#ffffff;
+	z-index:99999;
+	position:fixed;
+	top:0px;
+	left:0px;
+	text-align:center;
+	line-height:30px;
+	height:30px;
+	width:30px;
+	border-radius:50%;
+	font-weight:bold;
+	background-image: url(http://mayblog.tk/done.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.childNode{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.exitButton,.shareButton{
+	background-color:#ffffff;
+	height:30px;
+	width:30px;
+	position: absolute;
+	border-radius: 50%;
+	display: none;
+}
+.exitButton{
+	top:32px;
+	left: 0px;
+	background-image: url(http://mayblog.tk/close.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.shareButton{
+	top:64px;
+	left: 0px;
+	background-image: url(http://mayblog.tk/share.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.shareContent{
+	display: none
+}

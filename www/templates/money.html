@@ -1,0 +1,23 @@
+<ion-view>
+	<ion-content scroll-sista>
+		<ion-list>
+			<ion-item ng-click="clickChargeButton()">
+				{{_lang('total_money')}}
+			    <span class="item-note">
+			      {{money.total_money}}
+			    </span>
+			</ion-item>
+			<ion-item >
+				{{_lang('current_money')}}
+			    <span class="item-note">
+			      {{money.current_money}}
+			    </span>
+			</ion-item>
+			<ion-item class="text-center item-input">
+				<button class="button button-assertive" ng-click="clickChargeButton()">
+				  {{_lang('charge_money')}}
+				</button>
+			</ion-item>
+		</ion-list>
+	<ion-content>
+</ion-view>

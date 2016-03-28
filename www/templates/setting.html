@@ -1,0 +1,14 @@
+<ion-view>
+	<ion-content scroll-sista>
+		<ion-list>
+			<ion-item class="item-input item-select">
+				<span class="input-label">{{_lang('language')}}</span>
+    			<select ng-model="setting.language" ng-change="changeLanguage()">
+    				<option value="vi">{{_lang('vi')}}</option>
+    				<option value="en">{{_lang('en')}}</option>
+    				<option value="kr">{{_lang('kr')}}</option>
+    			</select>
+			</ion-item>
+		</ion-list>
+	<ion-content>
+</ion-view>

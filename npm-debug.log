@@ -1,0 +1,174 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'bowser' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'bowser', null ]
+7 verbose cache add spec bowser
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'bowser',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'bowser',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed bowser@*
+10 verbose addNamed "*" is a valid semver range for bowser
+11 silly addNameRange { name: 'bowser', range: '*', hasData: false }
+12 silly mapToRegistry name bowser
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/bowser
+16 verbose addNameRange registry:https://registry.npmjs.org/bowser not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/bowser
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 3:10:00 PM
+20 verbose request id 8fac01fe6a64ad6b
+21 verbose etag "5GG6TY5HLMCJG28821Z8SQB5S"
+22 http request GET https://registry.npmjs.org/bowser
+23 http 304 https://registry.npmjs.org/bowser
+24 verbose headers { date: 'Mon, 28 Mar 2016 08:10:00 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"5GG6TY5HLMCJG28821Z8SQB5S"',
+24 verbose headers   age: '65',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-hkg6823-HKG',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '1',
+24 verbose headers   'x-timer': 'S1459152600.622843,VS0,VE0',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Mon, 28 Mar 2016 08:10:00 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"5GG6TY5HLMCJG28821Z8SQB5S"',
+25 silly get     age: '65',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-hkg6823-HKG',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '1',
+25 silly get     'x-timer': 'S1459152600.622843,VS0,VE0',
+25 silly get     vary: 'Accept' } ]
+26 verbose etag https://registry.npmjs.org/bowser from cache
+27 verbose get saving bowser to /Users/vingle/.npm/registry.npmjs.org/bowser/.cache.json
+28 silly addNameRange number 2 { name: 'bowser', range: '*', hasData: true }
+29 silly addNameRange versions [ 'bowser',
+29 silly addNameRange   [ '0.0.1',
+29 silly addNameRange     '0.0.2',
+29 silly addNameRange     '0.0.3',
+29 silly addNameRange     '0.0.4',
+29 silly addNameRange     '0.0.5',
+29 silly addNameRange     '0.0.6',
+29 silly addNameRange     '0.0.7',
+29 silly addNameRange     '0.0.8',
+29 silly addNameRange     '0.0.9',
+29 silly addNameRange     '0.1.0',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.3.0',
+29 silly addNameRange     '0.3.1',
+29 silly addNameRange     '0.3.2',
+29 silly addNameRange     '0.3.3',
+29 silly addNameRange     '0.3.4',
+29 silly addNameRange     '0.3.5',
+29 silly addNameRange     '0.3.6',
+29 silly addNameRange     '0.3.7',
+29 silly addNameRange     '0.3.8',
+29 silly addNameRange     '0.3.9',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.5.0',
+29 silly addNameRange     '0.6.0',
+29 silly addNameRange     '0.7.1',
+29 silly addNameRange     '0.7.2',
+29 silly addNameRange     '0.7.3',
+29 silly addNameRange     '1.0.0' ] ]
+30 silly addNamed bowser@1.0.0
+31 verbose addNamed "1.0.0" is a plain semver version for bowser
+32 silly cache afterAdd bowser@1.0.0
+33 verbose afterAdd /Users/vingle/.npm/bowser/1.0.0/package/package.json not in flight; writing
+34 verbose afterAdd /Users/vingle/.npm/bowser/1.0.0/package/package.json written
+35 silly install resolved [ { name: 'bowser',
+35 silly install resolved     description: 'a browser detector',
+35 silly install resolved     keywords: [ 'ender', 'browser', 'sniff', 'detection' ],
+35 silly install resolved     version: '1.0.0',
+35 silly install resolved     homepage: 'https://github.com/ded/bowser',
+35 silly install resolved     author:
+35 silly install resolved      { name: 'Dustin Diaz',
+35 silly install resolved        email: 'dustin@dustindiaz.com',
+35 silly install resolved        url: 'http://dustindiaz.com' },
+35 silly install resolved     main: './bowser.js',
+35 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/ded/bowser.git' },
+35 silly install resolved     devDependencies: { smoosh: '*', mocha: '*' },
+35 silly install resolved     bugs: { url: 'https://github.com/ded/bowser/issues' },
+35 silly install resolved     directories: { test: 'test' },
+35 silly install resolved     scripts: { test: 'make test' },
+35 silly install resolved     license: 'MIT',
+35 silly install resolved     gitHead: '149bbda9bce57dff35a8d20b2886b67faf4edc7b',
+35 silly install resolved     _id: 'bowser@1.0.0',
+35 silly install resolved     _shasum: '0290420bfb88013155754e20fa0de5279bcd810a',
+35 silly install resolved     _from: 'bowser@*',
+35 silly install resolved     _npmVersion: '2.13.2',
+35 silly install resolved     _nodeVersion: '0.12.4',
+35 silly install resolved     _npmUser: { name: 'ded', email: 'polvero@gmail.com' },
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: '0290420bfb88013155754e20fa0de5279bcd810a',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/bowser/-/bowser-1.0.0.tgz' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/bowser/-/bowser-1.0.0.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install bowser@1.0.0 into /usr/local/lib
+37 info installOne bowser@1.0.0
+38 verbose installOne of bowser to /usr/local/lib not in flight; installing
+39 verbose lock using /Users/vingle/.npm/_locks/bowser-784d227daef27949.lock for /usr/local/lib/node_modules/bowser
+40 silly install write writing bowser 1.0.0 to /usr/local/lib/node_modules/bowser
+41 verbose unbuild lib/node_modules/bowser
+42 silly gentlyRm /usr/local/lib/node_modules/bowser is being purged from base /usr/local
+43 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/bowser
+44 verbose tar unpack /Users/vingle/.npm/bowser/1.0.0/package.tgz
+45 verbose tar unpacking to /usr/local/lib/node_modules/bowser
+46 silly gentlyRm /usr/local/lib/node_modules/bowser is being purged
+47 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/bowser
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 error tar.unpack untar error /Users/vingle/.npm/bowser/1.0.0/package.tgz
+50 verbose unlock done using /Users/vingle/.npm/_locks/bowser-784d227daef27949.lock for /usr/local/lib/node_modules/bowser
+51 verbose fstream_path /usr/local/lib/node_modules/bowser
+52 verbose fstream_type Directory
+53 verbose fstream_class DirWriter
+54 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/bowser'
+54 verbose stack     at Error (native)
+55 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+55 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+55 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+56 verbose cwd /Users/vingle/vingle/browser
+57 error Darwin 15.0.0
+58 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "bowser"
+59 error node v4.2.2
+60 error npm  v2.14.7
+61 error path /usr/local/lib/node_modules/bowser
+62 error code EACCES
+63 error errno -13
+64 error syscall mkdir
+65 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/bowser'
+65 error     at Error (native)
+65 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/bowser']
+65 error   errno: -13,
+65 error   code: 'EACCES',
+65 error   syscall: 'mkdir',
+65 error   path: '/usr/local/lib/node_modules/bowser',
+65 error   fstream_type: 'Directory',
+65 error   fstream_path: '/usr/local/lib/node_modules/bowser',
+65 error   fstream_class: 'DirWriter',
+65 error   fstream_stack:
+65 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+65 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+65 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+66 error Please try running this command again as root/Administrator.
+67 verbose exit [ -13, true ]
+68 verbose unbuild lib/node_modules/bowser
+69 silly gentlyRm /usr/local/lib/node_modules/bowser is being purged from base /usr/local
+70 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/bowser

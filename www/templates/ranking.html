@@ -1,0 +1,13 @@
+<ion-view>
+	<ion-content scroll-sista>
+		<ion-list>
+			<ion-item class="item-icon-left" ng-repeat="rank in ranks">
+				<i class="icon ion-ribbon-b"></i>
+					{{rank.name?rank.name:_lang('unknow')}}
+    			<span class="item-note">
+			      	{{rank.current_money}}
+			    </span>
+			</ion-item>
+		</ion-list>
+	<ion-content>
+</ion-view>

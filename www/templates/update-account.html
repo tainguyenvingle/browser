@@ -1,0 +1,15 @@
+<ion-view>
+	<ion-content scroll-sista>
+		<ion-list>
+			<ion-item class="item-input">
+				<span class="input-label">{{_lang('user_name')}}</span>
+    			<input type="text" ng-model="userAccout.name">
+			</ion-item>
+			<ion-item class="text-center item-input">
+				<button class="button button-assertive" ng-click="updateAccount()">
+				  {{_lang('save')}}
+				</button>
+			</ion-item>
+		</ion-list>
+	<ion-content>
+</ion-view>

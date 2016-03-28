@@ -1,0 +1,21 @@
+<ion-view>	
+	<ion-content>
+		<div class="list">
+			<div class="item item-input-inset">
+	            <label class="item-input-wrapper">
+	             	<input type="text" ng-model="addressForm.url" placeholder="URL">
+	            </label>
+	            <button type="submit" class="button button-small button-assertive" ng-click="submitAddressForm()">
+	              {{_lang('submit')}}
+	            </button>
+	          </div>
+		    <a class="item item-thumbnail-left" ng-click="selectItem($index)" ng-repeat="item in items">
+		      <img class="image-thumbnail" src="{{item.thumbnail}}">
+		      <h2>{{item.name}}</h2>
+		    </a>
+		    <div class="text-center padding-top">
+		    <ion-spinner  ng-show="showSpiner" icon="spiral"></ion-spinner>
+		    </div>
+		</div>
+	</ion-content>
+</ion-view>
